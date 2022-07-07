@@ -39,7 +39,18 @@ const getProductsList = async () => {
   if (prods) {
     prodsList = [...prods];
     renderProductsList(prodsList);
-    console.log(prods);
+  }
+};
+
+const filterBrand = () => {
+  const select = getEle("filter-brand");
+  if (select.selectedIndex !== 0) {
+    const brand = select.options[select.selectedIndex].value;
+
+    const brandProduct = prodsList.filter((ele) => ele.type === brand);
+    renderProductsList(brandProduct);
+  } else {
+    renderProductsList(prodsList);
   }
 };
 
