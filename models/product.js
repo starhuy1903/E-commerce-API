@@ -1,5 +1,16 @@
 class Product {
-  constructor(name, price, screen, backCamera, frontCamera, img, desc, type) {
+  constructor(
+    id,
+    name,
+    price,
+    screen,
+    backCamera,
+    frontCamera,
+    img,
+    desc,
+    type
+  ) {
+    this.id = id;
     this.name = name;
     this.price = price;
     this.screen = screen;
@@ -8,5 +19,6 @@ class Product {
     this.img = img;
     this.desc = desc;
     this.type = type;
+    // this.id = Math.round(Math.random() * 10000000);
   }
 }

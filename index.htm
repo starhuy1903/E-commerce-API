@@ -13,6 +13,8 @@
       integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
   </head>
   <body>
     <!-- Start header -->
@@ -79,12 +81,19 @@
                   Search
                 </button>
               </form>
+              
             </div>
           </div>
         </nav>
       </div>
     </header>
     <!-- End header -->
+    <div class="cart-button">
+        <button onclick="renderCart()">
+                <i class="fa-solid fa-cart-shopping"></i>
+              </button>             
+    </div>
+    
 
     <!-- Start products list -->
     <section class="product-section mt-5">
@@ -103,7 +112,31 @@
         <div class="row" id="product-list">      
       </div>
     </section>
-     <!-- Start products list -->
+     <!-- End products list -->
+
+     <!-- Start cart list -->
+     <section class="cart-section" id="cart" style="display: none">
+        <div class="container py-5 h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col">
+        <div class="card">
+          <div class="card-body p-4">
+
+            <div class="row">
+
+              <div class="col" id="productList">
+                
+                <!-- Product list here-->
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+     </section>
+     <!-- End cart list -->
 
     <!-- JavaScript Bundle with Popper -->
     <script
