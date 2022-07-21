@@ -19,6 +19,7 @@ class Product {
     this.img = img;
     this.desc = desc;
     this.type = type;
-    // this.id = Math.round(Math.random() * 10000000);
   }
 }
+
+// export default Product;
